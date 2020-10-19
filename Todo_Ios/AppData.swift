@@ -14,8 +14,9 @@ class AppData
     
     class func initialize()
     {
-        let item_1 = Item(description: "To delete items drag the item to the left", done: false)
+        let item_1 = Item(name: "To delete items drag the item to the left", done: false)
+        let item_2 = Item(name: "Tap to deactivate", done: false)
 
-        items = [item_1]
+        items = [item_1, item_2]
     }
 }

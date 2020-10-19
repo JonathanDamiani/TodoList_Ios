@@ -64,14 +64,16 @@ extension MainViewController
         {
             let itemInAppData = AppData.items[i]
             
-            if (itemInAppData.description == item.description)
+            if (itemInAppData.name == item.name)
             {
-                AppData.items[i] = item
+                AppData.items.remove(at: i)
                 break
             }
         }
         
         tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.right)
+        
+        HandleData.write()
     }
     
     // Toggle item done
@@ -106,11 +108,13 @@ extension MainViewController
         {
             let itemInAppData = AppData.items[i]
             
-            if (itemInAppData.description == item.description)
+            if (itemInAppData.name == item.name)
             {
                 AppData.items[i] = item
             }
         }
+        
+        HandleData.write()
     }
     
     // Number of items per section
@@ -142,7 +146,7 @@ extension MainViewController
             thisItem = doneItems[indexPath.row]
         }
         
-        let attrString = NSMutableAttributedString(string: thisItem.description)
+        let attrString = NSMutableAttributedString(string: thisItem.name)
         
         if thisItem.done
         {

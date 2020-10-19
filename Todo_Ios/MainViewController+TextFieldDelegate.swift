@@ -34,7 +34,7 @@ extension MainViewController: UITextFieldDelegate
             {
                 let item = AppData.items[i]
             
-                if item.description.lowercased() == typedText.lowercased()
+                if item.name.lowercased() == typedText.lowercased()
                 {
                     AppData.items[i].done = false
                     self.tableView.reloadData()
@@ -42,7 +42,7 @@ extension MainViewController: UITextFieldDelegate
                 }
             }
             
-            let newItem = Item(description: typedText, done: false)
+            let newItem = Item(name: typedText, done: false)
             
             AppData.items.append(newItem)
             activeItems.append(newItem)
@@ -55,6 +55,7 @@ extension MainViewController: UITextFieldDelegate
             
             self.tableView.endUpdates()
             
+            HandleData.write()
             
             return true
         }

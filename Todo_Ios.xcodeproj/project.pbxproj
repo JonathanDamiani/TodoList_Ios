@@ -19,6 +19,8 @@
 		A9AF0E1F251522D500356231 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9AF0E1D251522D500356231 /* LaunchScreen.storyboard */; };
 		A9AF0E272515296B00356231 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AF0E262515296B00356231 /* Item.swift */; };
 		A9AF0E29251529A300356231 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AF0E28251529A300356231 /* AppData.swift */; };
+		A9DBB6EA253D361D00C58377 /* Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBB6E9253D361D00C58377 /* Convert.swift */; };
+		A9DBB6EE253D3BD900C58377 /* HandleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBB6ED253D3BD900C58377 /* HandleData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		A9AF0E20251522D500356231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9AF0E262515296B00356231 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		A9AF0E28251529A300356231 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		A9DBB6E9253D361D00C58377 /* Convert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convert.swift; sourceTree = "<group>"; };
+		A9DBB6ED253D3BD900C58377 /* HandleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,19 +72,21 @@
 		A9AF0E11251522D300356231 /* Todo_Ios */ = {
 			isa = PBXGroup;
 			children = (
+				A9AF0E28251529A300356231 /* AppData.swift */,
 				A9AF0E12251522D300356231 /* AppDelegate.swift */,
-				A9AF0E14251522D300356231 /* SceneDelegate.swift */,
+				A9AF0E1B251522D500356231 /* Assets.xcassets */,
+				A9AF0E20251522D500356231 /* Info.plist */,
+				A9AF0E262515296B00356231 /* Item.swift */,
+				A9AF0E1D251522D500356231 /* LaunchScreen.storyboard */,
+				A9AF0E18251522D300356231 /* Main.storyboard */,
 				A9AF0E16251522D300356231 /* MainViewController.swift */,
-				A99334F12518453800710C7A /* MainViewController+ViewDidLoad.swift */,
 				A99334F42518473700710C7A /* MainViewController+SeparateItems.swift */,
 				A99334EE25183F9B00710C7A /* MainViewController+TableView.swift */,
 				A99334EB25183C6F00710C7A /* MainViewController+TextFieldDelegate.swift */,
-				A9AF0E262515296B00356231 /* Item.swift */,
-				A9AF0E18251522D300356231 /* Main.storyboard */,
-				A9AF0E1B251522D500356231 /* Assets.xcassets */,
-				A9AF0E1D251522D500356231 /* LaunchScreen.storyboard */,
-				A9AF0E20251522D500356231 /* Info.plist */,
-				A9AF0E28251529A300356231 /* AppData.swift */,
+				A99334F12518453800710C7A /* MainViewController+ViewDidLoad.swift */,
+				A9AF0E14251522D300356231 /* SceneDelegate.swift */,
+				A9DBB6E9253D361D00C58377 /* Convert.swift */,
+				A9DBB6ED253D3BD900C58377 /* HandleData.swift */,
 			);
 			path = Todo_Ios;
 			sourceTree = "<group>";
@@ -158,11 +164,13 @@
 			files = (
 				A9AF0E272515296B00356231 /* Item.swift in Sources */,
 				A9AF0E17251522D300356231 /* MainViewController.swift in Sources */,
+				A9DBB6EE253D3BD900C58377 /* HandleData.swift in Sources */,
 				A99334F22518453800710C7A /* MainViewController+ViewDidLoad.swift in Sources */,
 				A99334EF25183F9B00710C7A /* MainViewController+TableView.swift in Sources */,
 				A9AF0E13251522D300356231 /* AppDelegate.swift in Sources */,
 				A9AF0E15251522D300356231 /* SceneDelegate.swift in Sources */,
 				A99334F52518473700710C7A /* MainViewController+SeparateItems.swift in Sources */,
+				A9DBB6EA253D361D00C58377 /* Convert.swift in Sources */,
 				A99334EC25183C6F00710C7A /* MainViewController+TextFieldDelegate.swift in Sources */,
 				A9AF0E29251529A300356231 /* AppData.swift in Sources */,
 			);

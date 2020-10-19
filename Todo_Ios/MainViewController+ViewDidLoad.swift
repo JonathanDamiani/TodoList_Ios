@@ -13,8 +13,22 @@ extension MainViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        AppData.initialize()
-       
+        
+        let defaults = UserDefaults.standard
+        
+        if defaults.object(forKey: "firstUse") == nil
+        {
+            defaults.setValue(true, forKey: "firstUse")
+            defaults.synchronize()
+            AppData.initialize()
+            
+            HandleData.write()
+        }
+        else
+        {
+            HandleData.read()
+        }
+    
         separateItems()
         
         self.tableView.tableFooterView = UIView()
